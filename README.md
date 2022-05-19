@@ -4,6 +4,7 @@
 ```
 npm i
 ```
+- Limpiar el proyecto.
 - Crear un componente Navbar e importarlo en App.js
 - El Navbar debe contener un logo (utilizar imagen de la carpeta assets).
 - Los links del Navbar deberan ser generados con un map() a partir de un array de objetos (utilizar el array de la carpeta assets).
