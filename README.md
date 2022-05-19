@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Practica componentes, props y map()
+### Parte 1
+- Clonar este repositorio e instalar las dependencias con el siguiente comando. Verificar estar paradxs en la carpeta del proyecto.
+```
+npm i
+```
+- Crear un componente Navbar e importarlo en App.js
+- El Navbar debe contener un logo (utilizar imagen de la carpeta assets).
+- Los links del Navbar deberan ser generados con un map() a partir de un array de objetos (utilizar el array de la carpeta assets).
+- Crear un componente Footer con los nombres de ustedes. Importarlo en App.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Parte 2
+- Crear un componente ContenedorArticulos e importarlo en App.js.
+    - Este componente hace un map() de los articulos que encontraran en un array de objetos de la carpeta assets.
+    - Crear un componente Articulo que recibira la informacion del map() en ContenedorArticulos mediante props y la renderizara.
+- Crear un componente Aside e importarlo en App.js. Este componente mostrara un listado de articulos relacionados con un map(). El array esta en assets.
+- Posicionar el Aside a la derecha de Contenedor Articulos.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Parte 3
+- Crear una funcion en ContenedorArticulos que tome por parametro un titulo y haga un console.log del mismo.
+    - Pasar esta funcion a cada Articulo mediante props.
+    - Recibir la funcion en Articulo.
+    - Crear un boton que ejecute la funcion con un onClick={}
